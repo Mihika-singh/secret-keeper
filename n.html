@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPage</title>
+<script>
+//displaying the list which is unordered
+function getTheListItem(num1,num2){
+let info=document.querySelector(
+"ul:nth-of-type("+ num1 + ") li:nth-child(" + num2 + ")"
+);
+document.querySelector("div").innerHTML=info.innerHTML;
+}
+</script>
+</head>
+<body>
+   <ul>
+<li>A</li>
+<li>B</li>
+<li>C</li>
+<li>D</li>
+</ul>
+<ul>
+<li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+</ul>
+<ul>
+<li>10</li>
+<li>20</li>
+<li>30</li>
+<li>40</li>
+</ul>
+<ul>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+</ul>
+<!-- as soon as we clicks the button the function i.e. getTheListItem(2,2) function will get called -->
+<button onclick="getTheListItem(2,2)"> click me for function calling</button>
+<div></div>
+</body>
+</html>
